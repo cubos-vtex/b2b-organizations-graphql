@@ -92,12 +92,16 @@ type Query {
   getOrganizationsByEmail(email: String): [B2BOrganization]
     @checkUserAccess
     @cacheControl(scope: PRIVATE)
-
   getOrganizationsPaginatedByEmail(
     email: String
     page: Int = 1
     pageSize: Int = 25
-  ): B2BOrganizationPaginated @checkUserAccess @cacheControl(scope: PRIVATE)
+  ): B2BOrganizationPaginated
+    @checkUserAccess
+    @cacheControl(scope: PRIVATE)
+  getActiveOrganizationsByEmail(email: String): [B2BOrganization]
+    @cacheControl(scope: PRIVATE)
+    @validateStoreUserAccess
 
   checkOrganizationIsActive(id: String): Boolean
     @cacheControl(scope: PRIVATE)
