@@ -10,6 +10,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Introduced the getOrganizationsPaginatedByEmail function to retrieve organizations with pagination, preventing timeouts.
 
+## [0.63.0] - 2024-12-04
+### Fixed
+- Remove merge marker from code
+
+## [0.62.1] - 2024-12-04
+### Added
+- Add TopBarSettings type in B2B settings and updated saveB2BSettings to use the new topBar field in UISettings
+
 ## [0.62.0] - 2024-12-03
 ### Added
 

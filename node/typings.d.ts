@@ -239,10 +239,16 @@ interface Price {
   id: string
 }
 
+interface TopBarSetting {
+  name: string
+  hexColor: string
+}
+
 interface UISettings {
   showModal: boolean
   clearCart: boolean
   fullImpersonation: boolean
+  topBar?: TopBarSetting | null
 }
 
 interface CustomField {
