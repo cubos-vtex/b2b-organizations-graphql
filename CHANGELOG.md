@@ -10,6 +10,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Introduced the getOrganizationsPaginatedByEmail function to retrieve organizations with pagination, preventing timeouts.
 
+## [0.63.2] - 2024-12-19
+### Fixed
+- Fix `saveB2BSettings` mutation when `uiSettings` is absent
+
+## [0.63.1] - 2024-12-10
+### Added
+
+- Added mail notification to `createOrganizationAndCostCenterWithAdminUser` mutation
+
 ## [0.63.0] - 2024-12-04
 ### Fixed
 - Remove merge marker from code
