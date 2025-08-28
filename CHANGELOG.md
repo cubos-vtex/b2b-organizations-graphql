@@ -10,6 +10,60 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Introduced the getOrganizationsPaginatedByEmail function to retrieve organizations with pagination, preventing timeouts.
 
+## [1.0.3] - 2025-07-23
+
+### Fixed
+- Changed getOrganizationRequestById and getCostCenters cache control to private, allowing auth cookies to be sent
+
+## [1.0.2] - 2025-06-16
+
+### Fixed
+- Invalidate admin token if an invalid token is provided
+
+## [1.0.1] - 2025-05-27
+
+### Fixed
+- Generating new patch version
+
+## [1.0.0] - 2025-05-27
+
+### Fixed
+- Fixed token validation directives
+
+### Changed
+- Update dependency major version. If you are updating to this major version, make sure to update the following apps (if you have then installed) to the following major versions:
+    - vtex.b2b-admin-customers@1.x
+    - vtex.b2b-checkout-settings@2.x
+    - vtex.b2b-my-account@1.x
+    - vtex.b2b-orders-history@1.x
+    - vtex.b2b-organizations@2.x
+    - vtex.b2b-quotes@2.x
+    - vtex.b2b-quotes-graphql@3.x
+    - vtex.b2b-suite@1.x
+    - vtex.b2b-theme@4.x
+    - vtex.storefront-permissions@2.x
+    - vtex.storefront-permissions-components@1.x
+    - vtex.storefront-permissions-ui@2.x
+
+## [0.65.1] - 2025-05-13
+
+## [0.65.0] - 2025-04-11
+
+## [0.64.0] - 2025-03-21
+### Added
+- Add `notes` when updating organization request document
+
+## [0.63.4] - 2025-02-21
+
+### Fixed
+
+- Bug fix on `withPermissions` directive to allow the use of the `sender` directive
+
+## [0.63.3] - 2025-01-28
+### Fixed
+- Fix return from `removeUserWithEmail`
+
+
 ## [0.63.2] - 2024-12-19
 ### Fixed
 - Fix `saveB2BSettings` mutation when `uiSettings` is absent
